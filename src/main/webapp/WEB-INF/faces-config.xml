@@ -1,0 +1,19 @@
+<faces-config version="2.2"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+    http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+      
+	<navigation-rule>
+		<display-name>Accueil</display-name>
+		<from-view-id>/index.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>proposer</from-outcome>
+			<to-view-id>/pages/proposer.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>rechercher</from-outcome>
+			<to-view-id>/pages/rechercher.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>  
+</faces-config>
